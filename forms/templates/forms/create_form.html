@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Create Form</h2>
+<form method="POST" novalidate>
+   {% csrf_token %}
+   {{ digiform.as_p }}
+   <input type="submit" value="Save">
+</form>
+{% endblock %}

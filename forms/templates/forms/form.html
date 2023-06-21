@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Form Data</h1>
+
+ {% for data in digitalForm %}
+   <h3> First Name : {{data.first_name}}</h3>
+   <h3> Last Name : {{data.last_name}}</h3>
+   <h3> Age : {{data.age}}</h3>
+   <h3> Date of Birth : {{data.data_of_birth}}</h3>
+   <h3> Birth Location : {{data.birth_place}}</h3>
+   <h3> --------------------------------------------------------- </h3>
+ {% endfor %}
+
+
+{% endblock %}
